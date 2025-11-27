@@ -1,0 +1,16 @@
+{
+  "id": "jd.monitor.settings",
+  "name": "京东价格监控",
+  "keys": [
+    "jd_monitor_list"
+  ],
+  "settings": [
+    {
+      "id": "jd_monitor_list",
+      "name": "监控商品列表（JSON）",
+      "val": "[]",
+      "type": "textarea",
+      "placeholder": "请填写监控商品 JSON 列表"
+    }
+  ]
+}
