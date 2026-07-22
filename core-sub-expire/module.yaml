@@ -8,7 +8,7 @@ scriptings:
   - http_response:
       name: "Core 订阅日期延长"
       match: "^https://test\\.klpjwycb\\.xyz:2053/check/querymaclist"
-      script_url: "https://raw.githubusercontent.com/PUBGXI/minis-modules/main/core-sub-expire/core-sub-expire.js"
+      script_url: "https://raw.githubusercontent.com/PUBGXI/ios_rule_script/master/core-sub-expire/core-sub-expire.js"
       body_required: true
 
 mitm:
