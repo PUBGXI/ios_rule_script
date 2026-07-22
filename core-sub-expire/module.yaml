@@ -1,0 +1,16 @@
+name: "Core 订阅到期延长 1 个月"
+description: "拦截 Core 内核订阅查询接口，将返回的到期日期延后 1 个月"
+author: "Minis"
+homepage: "https://minis.dev"
+icon: "clock.arrow.circlepath"
+
+scriptings:
+  - http_response:
+      name: "Core 订阅日期延长"
+      match: "^https://test\\.klpjwycb\\.xyz:2053/check/querymaclist"
+      script_url: "https://raw.githubusercontent.com/PUBGXI/minis-modules/main/core-sub-expire/core-sub-expire.js"
+      body_required: true
+
+mitm:
+  hostnames:
+    - "*.klpjwycb.xyz"
