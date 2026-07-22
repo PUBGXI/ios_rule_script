@@ -9,8 +9,8 @@
 export default async function (ctx) {
   if (!ctx.response || !ctx.response.body) return;
 
-  // ctx.response.body 是 ReadableStream，读取为文本
-  const rawBody = await ctx.response.body.text();
+  // ctx.response.body 是字符串
+  const rawBody = ctx.response.body;
   if (!rawBody) return;
 
   try {
